@@ -1,1 +1,1 @@
- # niroboriginals/bangla-caption-generator github.io
+ # bangla-caption-generator github.io
