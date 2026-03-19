@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Bangla Caption</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: #ffcc00;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Bangla Caption Generator 😍</h1>
+
+<button onclick="generateCaption()">Caption আনো</button>
+
+<p id="result"></p>
+
+<script>
+let captions = [
+"ভালোবাসা মানে শুধু কথা না, অনুভূতি ❤️",
+"যাকে চাই সে-ই দূরে থাকে 💔",
+"লাইফটা funny কিন্তু আমি সিরিয়াস 😂",
+"স্বপ্ন দেখতে জানলে একদিন সত্যি হবেই ✨",
+"যারা সত্যি ভালোবাসে, তারা কখনো ছেড়ে যায় না ❤️"
+];
+
+function generateCaption() {
+  let random = captions[Math.floor(Math.random() * captions.length)];
+  document.getElementById("result").innerText = random;
+}
+</script>
+
+</body>
+</html>
